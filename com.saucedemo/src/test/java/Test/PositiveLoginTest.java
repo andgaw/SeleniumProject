@@ -6,7 +6,7 @@ import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+
 
 public class PositiveLoginTest extends TestBase {
 
@@ -16,7 +16,7 @@ public class PositiveLoginTest extends TestBase {
 
         LoginPage loginPage = new LoginPage();
 
-        loginPage.typeIntoUserName();
+        loginPage.typeIntoUserName1();
         loginPage.typeIntoUserPassword();
         loginPage.clickOnLoginButton();
 

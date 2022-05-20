@@ -1,12 +1,13 @@
 package PageObjects;
 
 import Configuration.DriverManager;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
+
     @FindBy(css = "#user-name")
     private WebElement usernameField;
     @FindBy(css = "#password")
@@ -22,10 +23,34 @@ public class LoginPage {
         PageFactory.initElements(DriverManager.getWebDriver(), this);
     }
 
-    public void typeIntoUserName() {
+    public void typeIntoUserName1() {
 
         usernameField.clear();
         usernameField.sendKeys("standard_user");
+
+
+
+    }
+
+    public void typeIntoUserName2() {
+
+        usernameField.clear();
+        usernameField.sendKeys("locked_out_user");
+
+
+    }
+    public void typeIntoUserName3() {
+
+        usernameField.clear();
+        usernameField.sendKeys("problem_user");
+
+
+    }
+    public void typeIntoUserName4() {
+
+        usernameField.clear();
+        usernameField.sendKeys("performance_glitch_user");
+
 
 
     }
