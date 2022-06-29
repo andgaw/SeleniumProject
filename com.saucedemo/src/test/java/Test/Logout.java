@@ -1,39 +1,41 @@
 package Test;
 
 import PageObjects.LoginPage;
-import PageObjects.LogoutMenuOption;
+import PageObjects.MenuOption;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static org.testng.AssertJUnit.assertEquals;
 
 
-public class Logout extends TestBase  {
+public class Logout extends TestBase {
+
+
     @Test
-    public void logoutTest() {
+    public void logoutTest() throws InterruptedException {
 
 
-        LoginPage loginPage = new LoginPage();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.typeIntoUserName1("standard_user");
+        Thread.sleep(1000);
 
-        LogoutMenuOption logoutMenuOption = new LogoutMenuOption();
+        loginPage.typeIntoUserPassword("secret_sauce");
+        loginPage.clickOnLoginButton();
+        Thread.sleep(1000);
 
+        MenuOption menuOption = new MenuOption(driver);
+        menuOption.clickOnMenuAndLogout();
 
-        loginPage.typeIntoUserName1();
-        loginPage.typeIntoUserPassword();
-     loop();
-       assertEquals("https://www.saucedemo.com", "https://www.saucedemo.com");
+        assertEquals("https://www.saucedemo.com", "https://www.saucedemo.com");
 
 
     }
-    public void loop(){
 
-        LoginPage loginPage = new LoginPage();
-        LogoutMenuOption logoutMenuOption = new LogoutMenuOption();
-        loginPage.clickOnLoginButton();
-        logoutMenuOption.clickOnMenuAndLogout();
-
-
-
-
-
-
-}}
+}
