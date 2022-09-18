@@ -9,10 +9,8 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import static org.testng.AssertJUnit.assertEquals;
-
 public class CompleteOrderTest extends TestBase {
     private Logger logger = LogManager.getRootLogger();
-
     @Test
     public void completeOrder() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);

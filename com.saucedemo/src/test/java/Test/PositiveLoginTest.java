@@ -4,7 +4,6 @@ import PageObjects.LoginPage;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
-
 public class PositiveLoginTest extends TestBase {
     @Test
     public void LoginTest() throws InterruptedException {

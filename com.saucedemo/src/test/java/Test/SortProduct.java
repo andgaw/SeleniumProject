@@ -17,7 +17,6 @@ public class SortProduct extends TestBase {
     WebElement sortProductsWebElement;
     @FindBy(css = ".product_sort_container")
     WebElement nameAtoZButton;
-
     @Test
     public void sort() throws InterruptedException {
         PageFactory.initElements(driver, this);

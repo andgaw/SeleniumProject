@@ -9,7 +9,6 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
-
 public class AddRemoveAndBuyProducts extends TestBase {
     @Test
     public void addRemoveAndBuy() throws InterruptedException {

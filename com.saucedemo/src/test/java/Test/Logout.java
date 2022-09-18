@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
-
 public class Logout extends TestBase {
     @Test
     public void logoutTest() throws InterruptedException {
