@@ -1,19 +1,19 @@
-SeleniumProject
+#SeleniumProject
 
 Opis testów wykonanych na witrynie https://www.saucedemo.com/
 
-AddRemoveAndBuyProducts - system loguje się do sklepu, dodaje produkt do koszyka,sprawdza czy ilość produktów jest poprawna, a następnie usuwa produkt z koszyka i wylogowuje użytkownika ze sklepu.
+**AddRemoveAndBuyProducts** - system loguje się do sklepu, dodaje produkt do koszyka,sprawdza czy ilość produktów jest poprawna, a następnie usuwa produkt z koszyka i wylogowuje użytkownika ze sklepu.
 
-CompleteOrderTest - system loguje się, zamawia wszystkie produkty, które są dostępne w sklepie,oraz sprawdza, czy ilość jest prawidłowa.
+**CompleteOrderTest**- system loguje się, zamawia wszystkie produkty, które są dostępne w sklepie,oraz sprawdza, czy ilość jest prawidłowa.
 Następnie wypełnia formularz zamówieniowy, akceptuje zamówienie i sprawdza,czy transakcja przebiegła pomyślnie.
 
-Logout - system loguje użytkownika, a następnie wykonuje wylogowanie sprawdzając, czy przebiegło pomyślnie.
+**Logout** - system loguje użytkownika, a następnie wykonuje wylogowanie sprawdzając, czy przebiegło pomyślnie.
 
-NegativeLoginTest - system loguje użytkownika używając błędnych danych, sprawdza czy wyświetliła się informacja o niepoprawnych danych.
+**NegativeLoginTest** - system loguje użytkownika używając błędnych danych, sprawdza czy wyświetliła się informacja o niepoprawnych danych.
 
-PositiveLoginTest -  system loguje użytkownika używając poprawnych danych, oraz sprawdza, czy użytkownik znajduje się w głównym menu sklepu.
+**PositiveLoginTest** -  system loguje użytkownika używając poprawnych danych, oraz sprawdza, czy użytkownik znajduje się w głównym menu sklepu.
 
-SortProduct - system loguje użytkownika, a następnie filtruje listę produktów od najtańszych do najdroższych, oraz sprawdza poprawność wykonanej akcji.
+**SortProduct** - system loguje użytkownika, a następnie filtruje listę produktów od najtańszych do najdroższych, oraz sprawdza poprawność wykonanej akcji.
 
 
 
