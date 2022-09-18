@@ -7,23 +7,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+
 import static org.testng.AssertJUnit.assertEquals;
 
 public class CompleteOrderTest extends TestBase {
-private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getRootLogger();
 
     @Test
     public void completeOrder() throws InterruptedException {
-
-
-
-
-
         LoginPage loginPage = new LoginPage(driver);
         loginPage.typeIntoUserName1("standard_user");
         loginPage.typeIntoUserPassword("secret_sauce");
         loginPage.clickOnLoginButton();
-
         Products products = new Products(driver);
         Products.sauceLabsBackpack.click();
         Products.addToCardButtonSauceLabsBackpack.click();
@@ -43,22 +38,15 @@ private Logger logger = LogManager.getRootLogger();
         Products.testAlTheThingsTShirt.click();
         Products.addToCardTestAlTheThingsTShirt.click();
         Products.shoppingCartBadge.click();
-        Thread.sleep(1000);
         assertEquals(Products.shoppingCartLink.getText(), "6");
         Products.checkoutButton.click();
         logger.info("Buy all products");
-        Thread.sleep(1000);
-
         CheckoutOrders checkoutOrders = new CheckoutOrders();
         logger.info("Click Checkout");
         checkoutOrders.CheckoutInformation("Spurdo", "Spärde", "2137");
-        Thread.sleep(1000);
         Products.continueButton.click();
         Products.finishButton.click();
         logger.info("Finish orders");
-        Thread.sleep(4000);
         Assert.assertTrue(Products.ponyExpress.isDisplayed());
     }
-
-
 }

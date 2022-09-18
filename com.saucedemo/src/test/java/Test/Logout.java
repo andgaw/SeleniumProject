@@ -1,5 +1,4 @@
 package Test;
-
 import PageObjects.LoginPage;
 import PageObjects.MenuOption;
 
@@ -13,29 +12,17 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.AssertJUnit.assertEquals;
-
+import static org.testng.AssertJUnit.assertTrue;
 
 public class Logout extends TestBase {
-
-
     @Test
     public void logoutTest() throws InterruptedException {
-
-
         LoginPage loginPage = new LoginPage(driver);
         loginPage.typeIntoUserName1("standard_user");
-        Thread.sleep(1000);
-
         loginPage.typeIntoUserPassword("secret_sauce");
         loginPage.clickOnLoginButton();
-        Thread.sleep(1000);
-
         MenuOption menuOption = new MenuOption(driver);
         menuOption.clickOnMenuAndLogout();
-
-        assertEquals("https://www.saucedemo.com", "https://www.saucedemo.com");
-
-
+        assertEquals(loginPage.longinButton.getText(), "Login", "Login");
     }
-
 }

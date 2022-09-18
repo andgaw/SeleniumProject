@@ -6,7 +6,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserFactory {
-
     public static WebDriver getBrowser(BrowserType browserType) {
         switch (browserType) {
             case CHROME:
