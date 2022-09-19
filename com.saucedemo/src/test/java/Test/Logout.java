@@ -1,4 +1,5 @@
 package Test;
+
 import PageObjects.LoginPage;
 import PageObjects.MenuOption;
 
@@ -11,8 +12,8 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.AssertJUnit.*;
+
 public class Logout extends TestBase {
     @Test
     public void logoutTest() throws InterruptedException {
@@ -22,6 +23,6 @@ public class Logout extends TestBase {
         loginPage.clickOnLoginButton();
         MenuOption menuOption = new MenuOption(driver);
         menuOption.clickOnMenuAndLogout();
-        assertEquals(loginPage.longinButton.getText(), "Login", "Login");
+        assertTrue(loginPage.longinButton.isDisplayed());
     }
 }

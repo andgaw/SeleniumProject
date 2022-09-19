@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 public class Products {
+    @FindBy(css = ".title")
+    public static WebElement ProductsTitle;
     @FindBy(css = ".shopping_cart_link")
     public static WebElement shoppingCartLink;
     @FindBy(css = ".shopping_cart_badge")
