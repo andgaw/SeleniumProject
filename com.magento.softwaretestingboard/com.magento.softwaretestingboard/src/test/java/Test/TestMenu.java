@@ -8,6 +8,6 @@ public class TestMenu extends TestBase {
     public void mainMenuTest() {
         MainMenu mainMenu = new MainMenu(driver);
 
-        mainMenu.womanMenuTesting();
+        mainMenu.MenuTesting();
     }
 }

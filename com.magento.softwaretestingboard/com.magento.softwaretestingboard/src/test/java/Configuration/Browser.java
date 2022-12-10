@@ -16,6 +16,6 @@ public class Browser {
                 return new FirefoxDriver();
             default:
                 throw new IllegalStateException("Unknown browser type! Please check your configuration");
-}
+        }
 
     }}
