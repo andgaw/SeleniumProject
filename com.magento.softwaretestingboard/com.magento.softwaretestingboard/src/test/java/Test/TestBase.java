@@ -15,13 +15,14 @@ public class TestBase {
 
         driver = Browser.getBrowser(SelectDriverBrowser.CHROME);
         driver.get("https://magento.softwaretestingboard.com/");
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.manage().window().maximize();
     }
     @AfterTest
     public void afterTest() {
-        driver.close();
+       // driver.close();
         driver.quit();
     }
 }

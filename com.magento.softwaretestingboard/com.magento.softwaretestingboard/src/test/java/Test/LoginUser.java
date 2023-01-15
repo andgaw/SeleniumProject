@@ -1,16 +1,13 @@
 package Test;
-
-
 import PageObjects.UserAccount;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class LoginUser extends TestBase {
-    @Test
 
+    @Test
     public void UserTestLogin() {
-        UserAccount userAccount = new UserAccount(driver);
-        userAccount.loginUser(" andyanderson@cedarhill.com", "AndyAnderson1");
+                UserAccount userAccount = new UserAccount(driver);
+        userAccount.loginUser("andyanderson@cedarhill.com", "AndyAnderson1");
 
 
     }
