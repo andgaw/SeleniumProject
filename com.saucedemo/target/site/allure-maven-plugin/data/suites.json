@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Saucedemo Test",
+    "children" : [ {
+      "name" : "CompleteOrderTest",
+      "children" : [ {
+        "name" : "Test.CompleteOrderTest",
+        "children" : [ {
+          "name" : "completeOrder",
+          "uid" : "14e33c0bb275dae3",
+          "parentUid" : "54199e702188f946a82e028d1f1e49e6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1674902681308,
+            "stop" : 1674902685567,
+            "duration" : 4259
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "54199e702188f946a82e028d1f1e49e6"
+      } ],
+      "uid" : "7eafd87ef50f947c6ecea352962e4033"
+    }, {
+      "name" : "AddRemoveAndBuyProducts",
+      "children" : [ {
+        "name" : "Test.AddRemoveAndBuyProducts",
+        "children" : [ {
+          "name" : "addRemoveAndBuy",
+          "uid" : "e2c13c35fe2e0ebe",
+          "parentUid" : "427c41a7ae9d60785d1b0d846d30a915",
+          "status" : "passed",
+          "time" : {
+            "start" : 1674902688843,
+            "stop" : 1674902690863,
+            "duration" : 2020
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "427c41a7ae9d60785d1b0d846d30a915"
+      } ],
+      "uid" : "8817cae7b846c829452262e6ef122bab"
+    } ],
+    "uid" : "376a3a9231c8b064c11e5887a4a73636"
+  } ]
+}

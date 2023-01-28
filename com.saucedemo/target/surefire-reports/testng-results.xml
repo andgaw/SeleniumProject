@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-28T11:44:32 CET" name="Saucedemo Test" finished-at="2023-01-28T11:44:51 CET" duration-ms="18765">
+    <groups>
+    </groups>
+    <test started-at="2023-01-28T11:44:32 CET" name="CompleteOrderTest" finished-at="2023-01-28T11:44:46 CET" duration-ms="13839">
+      <class name="Test.CompleteOrderTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Test.CompleteOrderTest@4976085]" started-at="2023-01-28T11:44:32 CET" name="beforeTest" finished-at="2023-01-28T11:44:41 CET" duration-ms="8686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="completeOrder()[pri:0, instance:Test.CompleteOrderTest@4976085]" started-at="2023-01-28T11:44:41 CET" name="completeOrder" finished-at="2023-01-28T11:44:45 CET" duration-ms="4341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- completeOrder -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Test.CompleteOrderTest@4976085]" started-at="2023-01-28T11:44:45 CET" name="afterTest" finished-at="2023-01-28T11:44:46 CET" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Test.CompleteOrderTest -->
+    </test> <!-- CompleteOrderTest -->
+    <test started-at="2023-01-28T11:44:46 CET" name="AddRemoveAndBuyProducts" finished-at="2023-01-28T11:44:51 CET" duration-ms="4856">
+      <class name="Test.AddRemoveAndBuyProducts">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Test.AddRemoveAndBuyProducts@49cb1baf]" started-at="2023-01-28T11:44:46 CET" name="beforeTest" finished-at="2023-01-28T11:44:48 CET" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="addRemoveAndBuy()[pri:0, instance:Test.AddRemoveAndBuyProducts@49cb1baf]" started-at="2023-01-28T11:44:48 CET" name="addRemoveAndBuy" finished-at="2023-01-28T11:44:50 CET" duration-ms="2023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRemoveAndBuy -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Test.AddRemoveAndBuyProducts@49cb1baf]" started-at="2023-01-28T11:44:50 CET" name="afterTest" finished-at="2023-01-28T11:44:51 CET" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- Test.AddRemoveAndBuyProducts -->
+    </test> <!-- AddRemoveAndBuyProducts -->
+  </suite> <!-- Saucedemo Test -->
+</testng-results>

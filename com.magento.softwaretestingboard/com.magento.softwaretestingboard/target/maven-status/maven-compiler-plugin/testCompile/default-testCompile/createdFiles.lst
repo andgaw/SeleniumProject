@@ -1,0 +1,12 @@
+PageObjects\MainMenu.class
+PageObjects\ProductsForMen.class
+Test\BuyProduct.class
+Test\TestMenu.class
+Configuration\Browser$1.class
+Configuration\SelectDriverBrowser.class
+waits\DriverManager.class
+Test\TestBase.class
+waits\WaitForElement.class
+PageObjects\UserAccount.class
+Test\LoginUser.class
+Configuration\Browser.class

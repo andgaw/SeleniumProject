@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "AndrewProBook",
+    "children" : [ {
+      "name" : "1440@AndrewProBook.main(1)",
+      "children" : [ {
+        "name" : "completeOrder",
+        "uid" : "14e33c0bb275dae3",
+        "parentUid" : "5ba5a76f2246ce80e6ee7e7171f5fccc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674902681308,
+          "stop" : 1674902685567,
+          "duration" : 4259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addRemoveAndBuy",
+        "uid" : "e2c13c35fe2e0ebe",
+        "parentUid" : "5ba5a76f2246ce80e6ee7e7171f5fccc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1674902688843,
+          "stop" : 1674902690863,
+          "duration" : 2020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5ba5a76f2246ce80e6ee7e7171f5fccc"
+    } ],
+    "uid" : "1a68bf05241bbabc081400c51822e004"
+  } ]
+}
