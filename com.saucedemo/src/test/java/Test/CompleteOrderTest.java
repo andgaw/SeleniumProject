@@ -3,6 +3,8 @@ package Test;
 import PageObjects.CheckoutOrders;
 import PageObjects.LoginPage;
 import PageObjects.Products;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.Logger;
@@ -12,6 +14,11 @@ import static org.testng.AssertJUnit.assertEquals;
 public class CompleteOrderTest extends TestBase {
     private Logger logger = LogManager.getRootLogger();
     @Test
+    @Description (" The system logs in, orders all products" +
+            "that are available in the store and checks if the quantity is correct. " +
+            "Then he fills out the order form, " +
+            "accepts the order and checks that the transaction was successful.")
+
     public void completeOrder() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.typeIntoUserName1("standard_user");

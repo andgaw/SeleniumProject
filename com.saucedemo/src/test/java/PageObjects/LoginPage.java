@@ -1,4 +1,5 @@
 package PageObjects;
+import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -23,16 +24,19 @@ public class LoginPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+    @Step("Type into User Name Field {username}")
     public void typeIntoUserName1(String username) {
         usernameField.clear();
         usernameField.sendKeys(username);
         logger.info("Typed into User Name Field {}", username);
     }
+    @Step("Type into Password Field {password}")
     public void typeIntoUserPassword(String password) {
         passwordField.clear();
         passwordField.sendKeys(password);
         logger.info("Typed into Password Field {}", password);
     }
+    @Step("Clicked on Login Button")
     public void clickOnLoginButton() {
         longinButton.click();
         logger.info("Clicked on Login Button");
